@@ -405,7 +405,7 @@ def Compute_HRUs_Semidistributed_Kmeans(covariates,mask,nhru,hydroblocks_info,wb
  time0 = time.time()
  X = np.array(X).T
  #Subsample the array
- np.random.seed(1)
+ np.random.seed(123)
  #minsamples = 3*10**5
  minsamples = X.shape[0] #Noemi
  if X.shape[0] > minsamples:
